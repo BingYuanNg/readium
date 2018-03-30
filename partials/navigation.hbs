@@ -1,0 +1,7 @@
+{{#foreach navigation}}
+	{{#if @first}}
+    	<a class="nav-{{slug}}{{#if current}} nav-current{{/if}}" href="{{url absolute="true"}}">{{label}}</a>
+	{{else}}
+		&nbsp;&nbsp;·&nbsp;&nbsp;<a class="nav-{{slug}}{{#if current}} nav-current{{/if}}" href="{{url absolute="true"}}">{{label}}</a>
+	{{/if}}
+{{/foreach}}
